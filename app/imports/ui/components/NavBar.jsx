@@ -10,6 +10,7 @@ class NavBar extends React.Component {
       <Menu style={menuStyle} attached="top" borderless inverted>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
           <Header inverted as='h1'>meteor-example-form-react</Header>
+          <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>Students</Menu.Item>
         </Menu.Item>
       </Menu>
     );

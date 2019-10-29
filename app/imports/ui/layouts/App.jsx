@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import CreateStudent from '../pages/CreateStudent';
 import EditStudent from '../pages/EditStudent';
 import NotFound from '../pages/NotFound';
+import StudentList from '../pages/StudentList';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -17,6 +18,9 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={CreateStudent}/>
               <Route path="/student/:email" component={EditStudent}/>
+              <Route path="/list" component={StudentList}/>
+              <Route path="/list" component={StudentList}/>
+
               <Route component={NotFound}/>
             </Switch>
             <Footer/>
